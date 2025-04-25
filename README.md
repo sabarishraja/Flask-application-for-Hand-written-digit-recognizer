@@ -5,6 +5,7 @@ This project is a Flask-based web application that uses a Convolutional Neural N
 <br>
 With the basic convolutional neural network, the predicted numbers were not same as the true value.
 Here are the test cases that I had used:
+<br>
 ![image_alt](https://github.com/sabarishraja/Flask-application-for-Hand-written-digit-recognizer/blob/main/True%20vs%20predicted%20values/t%20vs%20p%202.png)
 ![image_alt](https://github.com/sabarishraja/Flask-application-for-Hand-written-digit-recognizer/blob/main/True%20vs%20predicted%20values/t%20vs%20p%203.png)
 ![image_alt](https://github.com/sabarishraja/Flask-application-for-Hand-written-digit-recognizer/blob/main/True%20vs%20predicted%20values/t%20vs%20p%204.png)
