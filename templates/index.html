@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Digit Recognizer</title>
-        <link rel="stylesheet" href="{{url_for('static', filename = 'styles.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
     </head>
     <body>
         <h1>Handwritten digit recognizer</h1>
@@ -14,7 +14,7 @@
         </form>
 
         <!--If there's a prediction returned from the server, I'll try yo show it here-->
-        {% if prediction %}
+        {% if prediction is not none%}
         <h2>Prediction: {{ prediction }}</h2>
         {% endif %}
     </body>
