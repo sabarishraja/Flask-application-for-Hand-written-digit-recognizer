@@ -1,0 +1,25 @@
+<!-- This is the frontend page for the flask application-->
+<html>
+    <head>
+        <title>Digit Recognizer</title>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'styles.css')}}">
+    </head>
+    <body>
+        <h1>Handwritten digit recognizer</h1>
+        <!--I am using a form to upload the image and submit it in the server-->
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="file"> Upload an image of Handwritten digit: </label> <br> <br>
+            <input type="file" name="file" id="file" accept="image/*" required> <br> <br>
+            <button type="submit">Identify</button>
+        </form>
+
+        <!--If there's a prediction returned from the server, I'll try yo show it here-->
+        {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        {% endif %}
+    </body>
+</html>
+
+
+
+
